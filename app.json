@@ -1,0 +1,107 @@
+{
+  "name": "🦋ǫᴜᴇᴇɴ-ɢʀɪʟs🦋",
+  "description": "ᴡʜᴀᴛsᴀᴘᴘ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ ᴍᴀᴅᴇ ᴛᴏ ʜᴇʟᴘ ᴡʜᴀᴛsᴀᴘᴘ ᴜsᴇʀs ᴛᴏ ᴇɴᴊᴏʏ ᴡʜɪʟᴇ ʜᴇʟᴘɪɴɢ ɴᴊᴀʙᴜʟᴏ ᴊʙ..",
+  "keywords": [
+    "bot",
+    "node",
+    "baileys",
+    "whatsapp"
+  ],
+  "logo": "https://files.catbox.moe/m4dlve.jpg",
+  "repository": "https://github.com/NjabuloJ/Queen-grils",
+  "succes_url": "/",
+  "stack": "container",
+  "env": {
+    "PREFIX": {
+      "description": "Choose your bot's prefix",
+      "value": ".",
+      "required": true
+    },
+    "AUDIO_REPLY": {
+      "description": "Enter yes for your bot to auto reply audio in all chats",
+      "value": "yes",
+      "required": false
+    },
+    "AUTO_REACT_STATUS": {
+      "description": "Your contact status will be react automatically (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
+      "value": "yes",
+      "required": false
+    },
+    "PM_PERMIT": {
+      "description": "Restrict other users from using your bot in private messages (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
+      "value": "yes",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "you must give a name for you bot uhh??!!",
+      "value": "ǫᴜᴇᴇɴ ɢʀɪʟs",
+      "required": false 
+    },
+    "PUBLIC_MODE": {
+      "description": "Set 'yes' to make your bot public or 'no' to keep it private",
+      "value": "yes",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Insert your Heroku API key (required)",
+      "value": "HRKU-7c0559f5-c8ed-444f-87b1-413955d36a76",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Insert your Heroku app name (required)",
+      "value": "",
+      "required": true
+    },
+    "SESSION_ID": {
+      "description": "Enter your session ID, the code you receive after scanning the QR code",
+      "value": "",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "don't you have a name bro.Insert your name here!!",
+      "value": "ɴᴊᴀʙᴜʟᴏ ᴊʙ",
+      "required": false
+    },
+    "URL": {
+      "description": "you must add your bot image url.Get your image url now and fill it here",
+      "value": "https://files.catbox.moe/4nt2ds.jpeg",
+      "required": true  
+    },
+    "NUMERO_OWNER": {
+      "description": "Your phone number (exclude '+' and area code, e.g., '2547')",
+      "value": "26777821911",
+      "required": false
+    },
+    "WARN_COUNT": {
+      "description": "Set the warning limit for warning commands",
+      "value": "5",
+      "required": false
+    },
+    "STARTING_BOT_MESSAGE": {
+      "description": "Set 'yes' to display a starting bot message or 'no' to disable it",
+      "value": "no",
+      "required": true
+    },
+    "PRESENCE": {
+      "description": "Mark your presence: 1 for online, 2 for typing, 3 for recording, or leave blank for real state",
+      "value": "1",
+      "required": false
+    },
+    "AUTO_REACTION": {
+      "description": "Set 'yes' to enable bot reactions to messages in private chats",
+      "value": "no",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "standard-2x"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:essential-0"
+    }
+  ]
+}
